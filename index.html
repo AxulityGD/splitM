@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<title>page 2</title>
+<div class="split left">
+  <div class="centered">
+    <h1>
+      Player 1
+    </h1>
+    <iframe src="https://playcanv.as/p/oY6NfOfU/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <h1>
+      Player 2
+    </h1>
+    <src="img_avatar.png" alt="Avatar man">
+      <iframe src="https://playcanv.as/p/oY6NfOfU/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+   
+  </div>
+</div>  
+
+<style>
+  h1 {
+    background-color: yellow;
+  }
+ /* Split the screen in half */
+ .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+} 
+</style>
